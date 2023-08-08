@@ -81,4 +81,6 @@ clear.addEventListener('click', () => {
 const backspace = document.querySelector('.backspace');
 backspace.addEventListener('click', () => {
     display.textContent = display.textContent.slice(0, -1);
+    if (action === undefined) a = a.slice(0 , -1);
+    else b = b.slice(0, -1);
 });
