@@ -45,18 +45,30 @@ operators.forEach(operator => {
     operator.addEventListener('click', (e) => {
         switch (e.target.innerText) {
             case '+':
+                if (action != undefined) {
+                    a = operate(a, b, action);
+                }
                 action = '+';
                 display.textContent = '';
                 break;
             case '-':
+                if (action != undefined) {
+                    a = operate(a, b, action);
+                }
                 action = '-';
                 display.textContent = '';
                 break;
             case '*':
+                if (action != undefined) {
+                    a = operate(a, b, action);
+                }
                 action = '*';
                 display.textContent = '';
                 break;
             case '/':
+                if (action != undefined) {
+                    a = operate(a, b, action);
+                }
                 action = '/';
                 display.textContent = '';
                 break;
