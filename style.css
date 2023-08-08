@@ -1,0 +1,36 @@
+.container {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rows {
+    display: flex;
+    flex: auto;
+    gap: 20px;
+}
+
+.digit, 
+.operator,
+.equal, 
+.decimal, 
+.clear,
+.delete {
+    flex: 1 1 100%;
+}
+
+#calcDisplay {
+    display: flex;
+    border-style: double;
+    height: 100px;
+}
+
+#displayValue {
+    font-size: xx-large;
+    flex: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
