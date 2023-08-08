@@ -17,7 +17,7 @@
 .equal, 
 .decimal, 
 .clear,
-.delete {
+.backspace {
     flex: 1 1 100%;
 }
 

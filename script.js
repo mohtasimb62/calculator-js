@@ -77,3 +77,8 @@ clear.addEventListener('click', () => {
     action = undefined;
     display.textContent = '';
 });
+
+const backspace = document.querySelector('.backspace');
+backspace.addEventListener('click', () => {
+    display.textContent = display.textContent.slice(0, -1);
+});
