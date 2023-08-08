@@ -79,6 +79,7 @@ operators.forEach(operator => {
 const equal = document.querySelector('.equal');
 equal.addEventListener('click', () => {
     a = operate(a, b, action);
+    action = undefined;
     display.textContent = a;
 });
 
